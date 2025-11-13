@@ -1,14 +1,32 @@
-﻿namespace RFSchedulingWizardPrototype
+﻿using System;
+using System.Collections.Generic;
+
+namespace RFSchedulingWizardPrototype
 {
-    // 用來暫存 4 個步驟的資料
+    // 用來暫存 4 個步驟的資料（Singleton）
     public class WizardContext
     {
+        // ★ Singleton Instance ★
+        private static WizardContext _instance;
+        public static WizardContext Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new WizardContext();
+                return _instance;
+            }
+        }
+
+        // ★ Private constructor（不允許外部 new）
+        private WizardContext() { }
+
         // Step1：Project 資訊
         public string ProjectName { get; set; }
         public string Customer { get; set; }
         public string Priority { get; set; }
-        public DateTime? ProjectStartDate { get; set; }
-        public DateTime? ProjectEndDate { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         // Step2：Regulation（先用簡單字串列表表示）
         public List<string> SelectedRegulations { get; set; } = new List<string>();
