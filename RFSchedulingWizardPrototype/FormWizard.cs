@@ -57,6 +57,23 @@ namespace RFSchedulingWizardPrototype
                 WizardContext.Instance.StartDate = dtStartDate.EditValue as DateTime?;
                 WizardContext.Instance.EndDate = dtEndDate.EditValue as DateTime?;
             }
+            else if (wizardControl1.SelectedPage == wizardPageRegulation)
+            {
+                WizardContext.Instance.SelectedRegulations.Clear();
+
+                foreach (var item in checkedListRegulations.CheckedItems)
+                {
+                    WizardContext.Instance.SelectedRegulations.Add(item.ToString());
+                }
+
+                if (WizardContext.Instance.SelectedRegulations.Count == 0)
+                {
+                    MessageBox.Show("You must select at least one regulation.","Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    e.Handled = true;
+                    return;
+                }
+            }
         }
     }
 }

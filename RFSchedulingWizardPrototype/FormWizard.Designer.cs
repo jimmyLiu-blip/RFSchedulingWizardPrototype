@@ -30,31 +30,37 @@
         {
             wizardControl1 = new DevExpress.XtraWizard.WizardControl();
             wizardPageProject = new DevExpress.XtraWizard.WizardPage();
-            labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            dtEndDate = new DevExpress.XtraEditors.DateEdit();
-            dtStartDate = new DevExpress.XtraEditors.DateEdit();
-            txtCustomer = new DevExpress.XtraEditors.TextEdit();
-            labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            cmbPriority = new DevExpress.XtraEditors.ComboBoxEdit();
-            labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            txtProjectName = new DevExpress.XtraEditors.TextEdit();
+            groupControl2 = new DevExpress.XtraEditors.GroupControl();
             labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            dtEndDate = new DevExpress.XtraEditors.DateEdit();
+            labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            txtProjectName = new DevExpress.XtraEditors.TextEdit();
+            labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            dtStartDate = new DevExpress.XtraEditors.DateEdit();
+            labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            txtCustomer = new DevExpress.XtraEditors.TextEdit();
+            labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            cmbPriority = new DevExpress.XtraEditors.ComboBoxEdit();
             wizardPageRegulation = new DevExpress.XtraWizard.WizardPage();
+            groupControl1 = new DevExpress.XtraEditors.GroupControl();
             checkedListRegulations = new DevExpress.XtraEditors.CheckedListBoxControl();
             wizardPageTestItems = new DevExpress.XtraWizard.WizardPage();
             wizardPageEngineers = new DevExpress.XtraWizard.WizardPage();
             ((System.ComponentModel.ISupportInitialize)wizardControl1).BeginInit();
             wizardControl1.SuspendLayout();
             wizardPageProject.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
+            groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtEndDate.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtEndDate.Properties.CalendarTimeProperties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtProjectName.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtStartDate.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtStartDate.Properties.CalendarTimeProperties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomer.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cmbPriority.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtProjectName.Properties).BeginInit();
             wizardPageRegulation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
+            groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)checkedListRegulations).BeginInit();
             SuspendLayout();
             // 
@@ -72,44 +78,44 @@
             // 
             // wizardPageProject
             // 
-            wizardPageProject.Controls.Add(labelControl5);
-            wizardPageProject.Controls.Add(labelControl4);
-            wizardPageProject.Controls.Add(dtEndDate);
-            wizardPageProject.Controls.Add(dtStartDate);
-            wizardPageProject.Controls.Add(txtCustomer);
-            wizardPageProject.Controls.Add(labelControl3);
-            wizardPageProject.Controls.Add(cmbPriority);
-            wizardPageProject.Controls.Add(labelControl2);
-            wizardPageProject.Controls.Add(txtProjectName);
-            wizardPageProject.Controls.Add(labelControl1);
+            wizardPageProject.Controls.Add(groupControl2);
             wizardPageProject.Name = "wizardPageProject";
             wizardPageProject.Size = new System.Drawing.Size(1571, 680);
             wizardPageProject.Text = "Project Information";
             // 
-            // labelControl5
+            // groupControl2
             // 
-            labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
-            labelControl5.Appearance.Options.UseFont = true;
-            labelControl5.Location = new System.Drawing.Point(523, 349);
-            labelControl5.Name = "labelControl5";
-            labelControl5.Size = new System.Drawing.Size(181, 43);
-            labelControl5.TabIndex = 10;
-            labelControl5.Text = "End Date：";
+            groupControl2.Controls.Add(labelControl1);
+            groupControl2.Controls.Add(dtEndDate);
+            groupControl2.Controls.Add(labelControl5);
+            groupControl2.Controls.Add(txtProjectName);
+            groupControl2.Controls.Add(labelControl4);
+            groupControl2.Controls.Add(dtStartDate);
+            groupControl2.Controls.Add(labelControl3);
+            groupControl2.Controls.Add(txtCustomer);
+            groupControl2.Controls.Add(labelControl2);
+            groupControl2.Controls.Add(cmbPriority);
+            groupControl2.Dock = System.Windows.Forms.DockStyle.Right;
+            groupControl2.Location = new System.Drawing.Point(0, 0);
+            groupControl2.Name = "groupControl2";
+            groupControl2.Size = new System.Drawing.Size(1571, 680);
+            groupControl2.TabIndex = 11;
+            groupControl2.Text = "Project Information";
             // 
-            // labelControl4
+            // labelControl1
             // 
-            labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
-            labelControl4.Appearance.Options.UseFont = true;
-            labelControl4.Location = new System.Drawing.Point(26, 349);
-            labelControl4.Name = "labelControl4";
-            labelControl4.Size = new System.Drawing.Size(197, 43);
-            labelControl4.TabIndex = 9;
-            labelControl4.Text = "Start Date：";
+            labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelControl1.Appearance.Options.UseFont = true;
+            labelControl1.Location = new System.Drawing.Point(23, 55);
+            labelControl1.Name = "labelControl1";
+            labelControl1.Size = new System.Drawing.Size(250, 43);
+            labelControl1.TabIndex = 1;
+            labelControl1.Text = "Project Name：";
             // 
             // dtEndDate
             // 
             dtEndDate.EditValue = null;
-            dtEndDate.Location = new System.Drawing.Point(710, 346);
+            dtEndDate.Location = new System.Drawing.Point(279, 308);
             dtEndDate.Name = "dtEndDate";
             dtEndDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
             dtEndDate.Properties.Appearance.Options.UseFont = true;
@@ -118,10 +124,39 @@
             dtEndDate.Size = new System.Drawing.Size(250, 50);
             dtEndDate.TabIndex = 8;
             // 
+            // labelControl5
+            // 
+            labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
+            labelControl5.Appearance.Options.UseFont = true;
+            labelControl5.Location = new System.Drawing.Point(92, 311);
+            labelControl5.Name = "labelControl5";
+            labelControl5.Size = new System.Drawing.Size(181, 43);
+            labelControl5.TabIndex = 10;
+            labelControl5.Text = "End Date：";
+            // 
+            // txtProjectName
+            // 
+            txtProjectName.Location = new System.Drawing.Point(279, 52);
+            txtProjectName.Name = "txtProjectName";
+            txtProjectName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtProjectName.Properties.Appearance.Options.UseFont = true;
+            txtProjectName.Size = new System.Drawing.Size(250, 50);
+            txtProjectName.TabIndex = 2;
+            // 
+            // labelControl4
+            // 
+            labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
+            labelControl4.Appearance.Options.UseFont = true;
+            labelControl4.Location = new System.Drawing.Point(76, 247);
+            labelControl4.Name = "labelControl4";
+            labelControl4.Size = new System.Drawing.Size(197, 43);
+            labelControl4.TabIndex = 9;
+            labelControl4.Text = "Start Date：";
+            // 
             // dtStartDate
             // 
             dtStartDate.EditValue = null;
-            dtStartDate.Location = new System.Drawing.Point(229, 346);
+            dtStartDate.Location = new System.Drawing.Point(279, 244);
             dtStartDate.Name = "dtStartDate";
             dtStartDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
             dtStartDate.Properties.Appearance.Options.UseFont = true;
@@ -130,28 +165,38 @@
             dtStartDate.Size = new System.Drawing.Size(250, 50);
             dtStartDate.TabIndex = 7;
             // 
+            // labelControl3
+            // 
+            labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
+            labelControl3.Appearance.Options.UseFont = true;
+            labelControl3.Location = new System.Drawing.Point(85, 118);
+            labelControl3.Name = "labelControl3";
+            labelControl3.Size = new System.Drawing.Size(188, 43);
+            labelControl3.TabIndex = 5;
+            labelControl3.Text = "Customer：";
+            // 
             // txtCustomer
             // 
-            txtCustomer.Location = new System.Drawing.Point(356, 182);
+            txtCustomer.Location = new System.Drawing.Point(279, 115);
             txtCustomer.Name = "txtCustomer";
             txtCustomer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
             txtCustomer.Properties.Appearance.Options.UseFont = true;
             txtCustomer.Size = new System.Drawing.Size(250, 50);
             txtCustomer.TabIndex = 6;
             // 
-            // labelControl3
+            // labelControl2
             // 
-            labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
-            labelControl3.Appearance.Options.UseFont = true;
-            labelControl3.Location = new System.Drawing.Point(162, 185);
-            labelControl3.Name = "labelControl3";
-            labelControl3.Size = new System.Drawing.Size(188, 43);
-            labelControl3.TabIndex = 5;
-            labelControl3.Text = "Customer：";
+            labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelControl2.Appearance.Options.UseFont = true;
+            labelControl2.Location = new System.Drawing.Point(125, 181);
+            labelControl2.Name = "labelControl2";
+            labelControl2.Size = new System.Drawing.Size(148, 43);
+            labelControl2.TabIndex = 3;
+            labelControl2.Text = "Priority：";
             // 
             // cmbPriority
             // 
-            cmbPriority.Location = new System.Drawing.Point(356, 262);
+            cmbPriority.Location = new System.Drawing.Point(279, 178);
             cmbPriority.Name = "cmbPriority";
             cmbPriority.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
             cmbPriority.Properties.Appearance.Options.UseFont = true;
@@ -160,48 +205,32 @@
             cmbPriority.Size = new System.Drawing.Size(250, 50);
             cmbPriority.TabIndex = 4;
             // 
-            // labelControl2
-            // 
-            labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            labelControl2.Appearance.Options.UseFont = true;
-            labelControl2.Location = new System.Drawing.Point(202, 265);
-            labelControl2.Name = "labelControl2";
-            labelControl2.Size = new System.Drawing.Size(148, 43);
-            labelControl2.TabIndex = 3;
-            labelControl2.Text = "Priority：";
-            // 
-            // txtProjectName
-            // 
-            txtProjectName.Location = new System.Drawing.Point(356, 103);
-            txtProjectName.Name = "txtProjectName";
-            txtProjectName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtProjectName.Properties.Appearance.Options.UseFont = true;
-            txtProjectName.Size = new System.Drawing.Size(250, 50);
-            txtProjectName.TabIndex = 2;
-            // 
-            // labelControl1
-            // 
-            labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            labelControl1.Appearance.Options.UseFont = true;
-            labelControl1.Location = new System.Drawing.Point(100, 106);
-            labelControl1.Name = "labelControl1";
-            labelControl1.Size = new System.Drawing.Size(250, 43);
-            labelControl1.TabIndex = 1;
-            labelControl1.Text = "Project Name：";
-            // 
             // wizardPageRegulation
             // 
-            wizardPageRegulation.Controls.Add(checkedListRegulations);
+            wizardPageRegulation.Controls.Add(groupControl1);
             wizardPageRegulation.Name = "wizardPageRegulation";
             wizardPageRegulation.Size = new System.Drawing.Size(1571, 680);
             wizardPageRegulation.Text = "Select Regulations";
             // 
+            // groupControl1
+            // 
+            groupControl1.Controls.Add(checkedListRegulations);
+            groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            groupControl1.Location = new System.Drawing.Point(0, 0);
+            groupControl1.Name = "groupControl1";
+            groupControl1.Size = new System.Drawing.Size(1571, 262);
+            groupControl1.TabIndex = 1;
+            groupControl1.Text = "Select Regulations";
+            // 
             // checkedListRegulations
             // 
+            checkedListRegulations.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            checkedListRegulations.Appearance.Options.UseFont = true;
+            checkedListRegulations.Dock = System.Windows.Forms.DockStyle.Fill;
             checkedListRegulations.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] { new DevExpress.XtraEditors.Controls.CheckedListBoxItem("FCC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("NCC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("IC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("CE"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("TELEC") });
-            checkedListRegulations.Location = new System.Drawing.Point(121, 231);
+            checkedListRegulations.Location = new System.Drawing.Point(2, 34);
             checkedListRegulations.Name = "checkedListRegulations";
-            checkedListRegulations.Size = new System.Drawing.Size(114, 177);
+            checkedListRegulations.Size = new System.Drawing.Size(1567, 226);
             checkedListRegulations.TabIndex = 0;
             // 
             // wizardPageTestItems
@@ -228,15 +257,19 @@
             ((System.ComponentModel.ISupportInitialize)wizardControl1).EndInit();
             wizardControl1.ResumeLayout(false);
             wizardPageProject.ResumeLayout(false);
-            wizardPageProject.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
+            groupControl2.ResumeLayout(false);
+            groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dtEndDate.Properties.CalendarTimeProperties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtEndDate.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtProjectName.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtStartDate.Properties.CalendarTimeProperties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dtStartDate.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCustomer.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)cmbPriority.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtProjectName.Properties).EndInit();
             wizardPageRegulation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
+            groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)checkedListRegulations).EndInit();
             ResumeLayout(false);
 
@@ -262,6 +295,8 @@
         private DevExpress.XtraEditors.DateEdit dtStartDate;
         private DevExpress.XtraWizard.CompletionWizardPage completionWizardPage1;
         private DevExpress.XtraEditors.CheckedListBoxControl checkedListRegulations;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
     }
 }
 
