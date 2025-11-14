@@ -46,9 +46,12 @@
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
             checkedListRegulations = new DevExpress.XtraEditors.CheckedListBoxControl();
             wizardPageTestItems = new DevExpress.XtraWizard.WizardPage();
+            gridControlTestItems = new DevExpress.XtraGrid.GridControl();
+            gridViewTestItems = new DevExpress.XtraGrid.Views.Grid.GridView();
             wizardPageEngineers = new DevExpress.XtraWizard.WizardPage();
-            gridControl1 = new DevExpress.XtraGrid.GridControl();
-            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            gridControlEngineer = new DevExpress.XtraGrid.GridControl();
+            gridViewEngineer = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)wizardControl1).BeginInit();
             wizardControl1.SuspendLayout();
             wizardPageProject.SuspendLayout();
@@ -67,8 +70,13 @@
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)checkedListRegulations).BeginInit();
             wizardPageTestItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridControlTestItems).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewTestItems).BeginInit();
+            wizardPageEngineers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl3).BeginInit();
+            groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControlEngineer).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewEngineer).BeginInit();
             SuspendLayout();
             // 
             // wizardControl1
@@ -289,30 +297,57 @@
             // 
             // wizardPageTestItems
             // 
-            wizardPageTestItems.Controls.Add(gridControl1);
+            wizardPageTestItems.Controls.Add(gridControlTestItems);
             wizardPageTestItems.Name = "wizardPageTestItems";
             wizardPageTestItems.Size = new System.Drawing.Size(696, 380);
             wizardPageTestItems.Text = "Test Items";
             // 
+            // gridControlTestItems
+            // 
+            gridControlTestItems.Location = new System.Drawing.Point(3, 3);
+            gridControlTestItems.MainView = gridViewTestItems;
+            gridControlTestItems.Name = "gridControlTestItems";
+            gridControlTestItems.Size = new System.Drawing.Size(690, 374);
+            gridControlTestItems.TabIndex = 0;
+            gridControlTestItems.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridViewTestItems });
+            gridControlTestItems.Click += gridControlTestItems_Click;
+            // 
+            // gridViewTestItems
+            // 
+            gridViewTestItems.GridControl = gridControlTestItems;
+            gridViewTestItems.Name = "gridViewTestItems";
+            // 
             // wizardPageEngineers
             // 
+            wizardPageEngineers.Controls.Add(groupControl3);
             wizardPageEngineers.Name = "wizardPageEngineers";
             wizardPageEngineers.Size = new System.Drawing.Size(696, 380);
             wizardPageEngineers.Text = "Assign Engineers";
             // 
-            // gridControl1
+            // groupControl3
             // 
-            gridControl1.Location = new System.Drawing.Point(3, 3);
-            gridControl1.MainView = gridView1;
-            gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(690, 374);
-            gridControl1.TabIndex = 0;
-            gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            groupControl3.Controls.Add(gridControlEngineer);
+            groupControl3.Location = new System.Drawing.Point(0, 0);
+            groupControl3.Name = "groupControl3";
+            groupControl3.Size = new System.Drawing.Size(693, 380);
+            groupControl3.TabIndex = 0;
+            groupControl3.Text = "Engineer Assignment";
+            groupControl3.Paint += groupControl3_Paint;
             // 
-            // gridView1
+            // gridControlEngineer
             // 
-            gridView1.GridControl = gridControl1;
-            gridView1.Name = "gridView1";
+            gridControlEngineer.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridControlEngineer.Location = new System.Drawing.Point(2, 34);
+            gridControlEngineer.MainView = gridViewEngineer;
+            gridControlEngineer.Name = "gridControlEngineer";
+            gridControlEngineer.Size = new System.Drawing.Size(689, 344);
+            gridControlEngineer.TabIndex = 0;
+            gridControlEngineer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridViewEngineer });
+            // 
+            // gridViewEngineer
+            // 
+            gridViewEngineer.GridControl = gridControlEngineer;
+            gridViewEngineer.Name = "gridViewEngineer";
             // 
             // FormWizard
             // 
@@ -343,8 +378,13 @@
             groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)checkedListRegulations).EndInit();
             wizardPageTestItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridControlTestItems).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewTestItems).EndInit();
+            wizardPageEngineers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)groupControl3).EndInit();
+            groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridControlEngineer).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewEngineer).EndInit();
             ResumeLayout(false);
 
         }
@@ -372,8 +412,11 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private System.Windows.Forms.TableLayoutPanel tableProject;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControlTestItems;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewTestItems;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraGrid.GridControl gridControlEngineer;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewEngineer;
     }
 }
 

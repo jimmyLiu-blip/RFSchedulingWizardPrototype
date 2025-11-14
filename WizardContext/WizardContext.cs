@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace RFSchedulingWizardPrototype
 {
@@ -32,7 +33,7 @@ namespace RFSchedulingWizardPrototype
         public List<string> SelectedRegulations { get; set; } = new List<string>();
 
         // Step3：TestItem（我們先用簡單物件）
-        public List<TestItemInfo> TestItems { get; set; } = new List<TestItemInfo>();
+        public BindingList<TestItemInfo> TestItems { get; set; } = new BindingList<TestItemInfo>();
 
         // Step4：工程師分配
         public List<EngineerAssignmentInfo> EngineerAssignments { get; set; } = new List<EngineerAssignmentInfo>();
