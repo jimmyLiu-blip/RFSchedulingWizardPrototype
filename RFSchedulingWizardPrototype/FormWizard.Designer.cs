@@ -88,14 +88,14 @@
             wizardControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             wizardControl1.Name = "wizardControl1";
             wizardControl1.Pages.AddRange(new DevExpress.XtraWizard.BaseWizardPage[] { wizardPageProject, wizardPageRegulation, wizardPageTestItems, wizardPageEngineers });
-            wizardControl1.Size = new System.Drawing.Size(744, 593);
+            wizardControl1.Size = new System.Drawing.Size(740, 599);
             wizardControl1.NextClick += wizardControl1_NextClick;
             // 
             // wizardPageProject
             // 
             wizardPageProject.Controls.Add(groupControl2);
             wizardPageProject.Name = "wizardPageProject";
-            wizardPageProject.Size = new System.Drawing.Size(696, 380);
+            wizardPageProject.Size = new System.Drawing.Size(692, 386);
             wizardPageProject.Text = "Project Information";
             // 
             // groupControl2
@@ -105,7 +105,7 @@
             groupControl2.Location = new System.Drawing.Point(0, 0);
             groupControl2.Name = "groupControl2";
             groupControl2.Padding = new System.Windows.Forms.Padding(15);
-            groupControl2.Size = new System.Drawing.Size(696, 380);
+            groupControl2.Size = new System.Drawing.Size(692, 386);
             groupControl2.TabIndex = 11;
             groupControl2.Text = "Project Information";
             groupControl2.Paint += groupControl2_Paint;
@@ -135,7 +135,7 @@
             tableProject.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableProject.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableProject.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            tableProject.Size = new System.Drawing.Size(662, 314);
+            tableProject.Size = new System.Drawing.Size(658, 320);
             tableProject.TabIndex = 11;
             tableProject.Paint += tableProject_Paint;
             // 
@@ -270,7 +270,7 @@
             // 
             wizardPageRegulation.Controls.Add(groupControl1);
             wizardPageRegulation.Name = "wizardPageRegulation";
-            wizardPageRegulation.Size = new System.Drawing.Size(696, 380);
+            wizardPageRegulation.Size = new System.Drawing.Size(692, 386);
             wizardPageRegulation.Text = "Select Regulations";
             // 
             // groupControl1
@@ -279,7 +279,7 @@
             groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             groupControl1.Location = new System.Drawing.Point(0, 0);
             groupControl1.Name = "groupControl1";
-            groupControl1.Size = new System.Drawing.Size(696, 262);
+            groupControl1.Size = new System.Drawing.Size(692, 262);
             groupControl1.TabIndex = 1;
             groupControl1.Text = "Select Regulations";
             // 
@@ -287,11 +287,12 @@
             // 
             checkedListRegulations.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             checkedListRegulations.Appearance.Options.UseFont = true;
+            checkedListRegulations.CheckOnClick = true;
             checkedListRegulations.Dock = System.Windows.Forms.DockStyle.Fill;
             checkedListRegulations.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] { new DevExpress.XtraEditors.Controls.CheckedListBoxItem("FCC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("NCC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("IC"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("CE"), new DevExpress.XtraEditors.Controls.CheckedListBoxItem("TELEC") });
             checkedListRegulations.Location = new System.Drawing.Point(2, 34);
             checkedListRegulations.Name = "checkedListRegulations";
-            checkedListRegulations.Size = new System.Drawing.Size(692, 226);
+            checkedListRegulations.Size = new System.Drawing.Size(688, 226);
             checkedListRegulations.TabIndex = 0;
             checkedListRegulations.SelectedIndexChanged += checkedListRegulations_SelectedIndexChanged;
             // 
@@ -299,7 +300,7 @@
             // 
             wizardPageTestItems.Controls.Add(gridControlTestItems);
             wizardPageTestItems.Name = "wizardPageTestItems";
-            wizardPageTestItems.Size = new System.Drawing.Size(696, 380);
+            wizardPageTestItems.Size = new System.Drawing.Size(692, 386);
             wizardPageTestItems.Text = "Test Items";
             // 
             // gridControlTestItems
@@ -321,7 +322,7 @@
             // 
             wizardPageEngineers.Controls.Add(groupControl3);
             wizardPageEngineers.Name = "wizardPageEngineers";
-            wizardPageEngineers.Size = new System.Drawing.Size(696, 380);
+            wizardPageEngineers.Size = new System.Drawing.Size(692, 386);
             wizardPageEngineers.Text = "Assign Engineers";
             // 
             // groupControl3
@@ -353,7 +354,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(744, 593);
+            ClientSize = new System.Drawing.Size(740, 599);
             Controls.Add(wizardControl1);
             Margin = new System.Windows.Forms.Padding(5);
             Name = "FormWizard";
