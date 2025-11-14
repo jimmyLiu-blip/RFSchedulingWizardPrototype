@@ -68,12 +68,37 @@ namespace RFSchedulingWizardPrototype
 
                 if (WizardContext.Instance.SelectedRegulations.Count == 0)
                 {
-                    MessageBox.Show("You must select at least one regulation.","Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("You must select at least one regulation.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     e.Handled = true;
                     return;
                 }
             }
+        }
+
+        private void groupControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableProject_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtProjectName_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormWizard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListRegulations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
